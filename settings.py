@@ -1,4 +1,4 @@
-CEILLING = "air"
+CEILING = "air"
 WALL = "concrete 4"
 FLOOR = "concrete 3"
 WIDTH = 7
