@@ -18,7 +18,7 @@ with open("create_maze.mcfunction", "w") as f:
             f.write(f"execute @a[tag=private, scores={{direct=2}}] ~~~ execute @e[type=armor_stand, name=maze] ~{x} -60 ~{z} detect ~ {-60+(HEIGHT+1)} ~ air 0 fill ~ ~{HEIGHT-1} ~{WIDTH-1}  ~ ~ ~ {WALL}\n")
             f.write(f"execute @a[tag=private, scores={{direct=3}}] ~~~ execute @e[type=armor_stand, name=maze] ~{x} -60 ~{z} detect ~ {-60+(HEIGHT+1)} ~ air 0 fill ~-{WIDTH-1} ~{HEIGHT-1} ~  ~ ~ ~ {WALL}\n")
             f.write(f"execute @e[type=armor_stand, name=maze] ~{x} -60 ~{z} detect ~ {-60+(HEIGHT+1)} ~ air 0 fill ~{WIDTH-1} -61 ~{WIDTH-1} ~-{WIDTH-1} -61 ~-{WIDTH-1} {FLOOR}\n")
-            f.write(f"execute @e[type=armor_stand, name=maze] ~{x} -60 ~{z} detect ~ {-60+(HEIGHT+1)} ~ air 0 fill ~{WIDTH-1} {-60+HEIGHT} ~{WIDTH-1} ~-{WIDTH-1} {-60+HEIGHT} ~-{WIDTH-1} {CEILLING}\n")
+            f.write(f"execute @e[type=armor_stand, name=maze] ~{x} -60 ~{z} detect ~ {-60+(HEIGHT+1)} ~ air 0 fill ~{WIDTH-1} {-60+HEIGHT} ~{WIDTH-1} ~-{WIDTH-1} {-60+HEIGHT} ~-{WIDTH-1} {CEILING}\n")
             f.write(f"execute @e[type=armor_stand, name=maze] ~{x} -60 ~{z} setblock ~ {-60+(HEIGHT+1)} ~ structure_void\n")
     
     # 랜턴 생성
